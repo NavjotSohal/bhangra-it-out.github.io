@@ -73,33 +73,34 @@
             <p class="feature-heading">About Us</p>
             <!-- <img src="media/1a.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button onclick="document.getElementById('about-us-mdl').style.display='block'" class="know-more-btn">Know More</button>
         </div>
         <div class="feature">
             <p class="feature-heading">What</p>
             <!-- <img src="media/1b.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn" onclick="document.getElementById('what-mdl').style.display='block'">Know More</button>
         </div>
         <div class="feature">
             <p class="feature-heading">Why</p>
             <!-- <img src="media/1c.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn" onclick="document.getElementById('why-mdl').style.display='block'">Know More</button>
         </div>
         <div class="feature">
             <p class="feature-heading">How</p>
             <!-- <img src="media/1d.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn" onclick="document.getElementById('how-mdl').style.display='block'">Know More</button>
         </div>
         <div class="feature">
             <p class="feature-heading">History & how we started</p>
             <!-- <img src="media/1d.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn" onclick="document.getElementById('how-started-mdl').style.display='block'">Know More</button>
         </div>
     </div>
+    
 </div>
 
 <div class="section" id="ourServices">
@@ -109,25 +110,25 @@
             <p class="feature-heading">Educational institute</p>
             <!-- <img src="media/1a.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn"><a href="services/services.html">Know More</a></button>
         </div>
         <div class="feature">
             <p class="feature-heading">Cooperate institute</p>
             <!-- <img src="media/1b.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn"><a href="services/services.html">Know More</a></button>
         </div>
         <div class="feature">
             <p class="feature-heading">Bhangrarchi</p>
             <!-- <img src="media/1c.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn"><a href="services/services.html">Know More</a></button>
         </div>
         <div class="feature">
             <p class="feature-heading">Individual</p>
             <!-- <img src="media/1d.png" alt="" class="feature-imgs"/> -->
             <p class="feature-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero odio quis voluptates qui placeat nemo eius repellendus provident mollitia rerum voluptatem maiores minus ducimus modi, accusamus velit dolorem exercitationem.</p>
-            <button class="know-more-btn"><a href="#">Know More</a></button>
+            <button class="know-more-btn"><a href="services/services.html">Know More</a></button>
         </div>
     </div>
 </div>
@@ -304,17 +305,101 @@
 <footer>
     <div class="fixed-width footer-grid">
         <div class="footer-sec">
-            Footer Section 1
+            <span>Footer Section 1</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
         </div>
         <div class="footer-sec">
-            Footer Section 2
+            <span>Footer Section 2</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
         </div>
         <div class="footer-sec">
-            Footer Section 3
+            <span>Footer Section 3</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
+            <span>links</span>
         </div>
     </div>
 </footer>
 
+
+
+
+
+
+
+
+
+
+<!-- Modal start from here -->
+
+<div id="about-us-mdl" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h2>About Us</h2>
+            <span onclick="document.getElementById('about-us-mdl').style.display='none'" class="closebtn">&times;</span>
+        </div>
+        <div class="w3-container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad! Iure ex numquam sed blanditiis totam! Provident repudiandae architecto illum nostrum delectus perspiciatis eveniet tenetur ab. Cum optio possimus veritatis.</p>
+    </div>
+    </div>
+</div>
+
+<div id="what-mdl" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h2>What</h2>
+            <span onclick="document.getElementById('what-mdl').style.display='none'" class="closebtn">&times;</span>
+        </div>
+        <div class="w3-container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad! Iure ex numquam sed blanditiis totam! Provident repudiandae architecto illum nostrum delectus perspiciatis eveniet tenetur ab. Cum optio possimus veritatis.</p>
+    </div>
+    </div>
+</div>
+
+<div id="why-mdl" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h2>Why</h2>
+            <span onclick="document.getElementById('why-mdl').style.display='none'" class="closebtn">&times;</span>
+        </div>
+        <div class="w3-container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad! Iure ex numquam sed blanditiis totam! Provident repudiandae architecto illum nostrum delectus perspiciatis eveniet tenetur ab. Cum optio possimus veritatis.</p>
+    </div>
+    </div>
+</div>
+
+<div id="how-mdl" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h2>How</h2>
+            <span onclick="document.getElementById('how-mdl').style.display='none'" class="closebtn">&times;</span>
+        </div>
+        <div class="w3-container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad! Iure ex numquam sed blanditiis totam! Provident repudiandae architecto illum nostrum delectus perspiciatis eveniet tenetur ab. Cum optio possimus veritatis.</p>
+    </div>
+    </div>
+</div>
+
+<div id="how-started-mdl" class="modal">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h2>History & How We Started</h2>
+            <span onclick="document.getElementById('how-started-mdl').style.display='none'" class="closebtn">&times;</span>
+        </div>
+        <div class="w3-container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, ad! Iure ex numquam sed blanditiis totam! Provident repudiandae architecto illum nostrum delectus perspiciatis eveniet tenetur ab. Cum optio possimus veritatis.</p>
+    </div>
+    </div>
+</div>
+
+<!-- Modal ends here -->
 
 </body>
 <script>
@@ -333,4 +418,5 @@
       setTimeout(carousel, 3000); // Change image every 2 seconds
     }
     </script>
+
 </html>
