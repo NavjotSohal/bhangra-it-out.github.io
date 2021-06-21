@@ -4,6 +4,13 @@ html{
     scroll-behavior: smooth;
 }
 
+.slider-div{
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+
+
 body{
     margin:0px;
     padding:0px;
@@ -14,6 +21,10 @@ body{
     scroll-behavior: smooth;
 }
 
+.nav-fixed-width{
+    position: relative;
+}
+
 .fixed-width{
     width:1400px;
     margin:auto;
@@ -22,11 +33,21 @@ body{
     width:100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding:10px 0px;
 }
+.nav-social-div-inner{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+}
 .nav-cont{
-width:100%;
-background:#d82679;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width:100%;
+
 }
 .social-icons-div{
 width:80%;
@@ -50,22 +71,68 @@ justify-content: flex-end;
 }
 .cnt-btn{
     background:none;
-    border:2px solid #fff;
+    border:3px solid #d82679;
     color:#fff;
     padding:8px;
     cursor: pointer;
     font-size: 15px;
+    text-transform: capitalize;
     border-radius:3px;
+    font-weight:500;
 }
 .navbar{
-    background:#ffffff;
+    background:none;
     width:100%;
-    
+    position:absolute;
+    top:50px;
+    left:0px;   
 }
-.nav-contain{
+
+.big-nav{
     width:100%;
+    background:rgb(0,0,0,0.8);
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:125px;
+    z-index:9;
+    /* border-bottom:2px solid #fff; */
+}
+.nav-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:100%;
+}
+.logo-box-t{
+    width:20%;
+    position: relative;
+    height:200px;
+}
+.nav-pack-main{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+.nav-social-icons-div{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    width:80%;
+
+}
+.navigation-link-div{
+    width:100%;
+}
+
+.nav-contain{
+    /* position:absolute;
+    top:0px;
+    left:0px;
+    width:100%; */
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     height:300px;
 }
 .logo-div{
@@ -76,7 +143,7 @@ justify-content: flex-end;
     top:15px;
     left:0px;
     height:250px;
-    width:300px;
+    width:280px;
 }
 ul li{
     list-style:none;
@@ -84,43 +151,25 @@ ul li{
 }
 .nav-links-a{
     text-decoration:none;
-    color:#00AFF0;
-    font-size:18px;
-    font-weight:700;
+    color:#fff;
+    font-size:22px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
 }
-.lside-nav-div{
+.nav-links-ul{
     display: flex;
-    align-items: flex-end;
-}
-.rside-nav-div{
-    display: flex;
-    align-items: flex-end;
-}
-.lside-nav-div-ul{
-    display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
-    margin:0px;
-    padding:0px;
-    margin-bottom: 30px;
 }
-.rside-nav-div-ul{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin:0px;
-    padding:0px;
-    margin-bottom: 30px;
-}
+
+
 /* .lside-nav-div, .logo-div, .rside-nav-div{
 
     border:1px solid green;
 } */
 
 .mySlides{
-    height:80vh;
+    height:100vh;
     width:100%;
 }
 .section{
