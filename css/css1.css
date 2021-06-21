@@ -152,33 +152,7 @@ ul li{
     text-transform: uppercase;
 }
 
-.nav-links-a:hover:after {
-    animation:growOutLine;
-    animation-name: growOutLine;
-    animation-play-state: running;
-}
 
-@keyframes growOutLine{
-    25%{
-        width:25%;
-    }
-    50%{
-        width:50%;
-    }
-    75%{
-        width:75%;
-    }
-    100%{
-        width:100%;
-    }
-}
-/* 
-.explore-ask-cont{
-    position: relative;
-    margin:0 auto;
-    border:3px solid red;
-    width:100%;
-} */
 
 .explore-heading{
     text-align:center;
@@ -202,7 +176,7 @@ ul li{
     height: 40px;
     width: 33%;
     border-radius: 3px;
-    border: 2px solid #00AFF0;
+    border:none;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -211,7 +185,7 @@ ul li{
     text-decoration: none;
     color:#fff;
     font-size:18px;
-    font-weight:600;
+    display: block;
 }
 
 
