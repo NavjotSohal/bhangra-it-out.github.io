@@ -358,8 +358,83 @@ color:#fff;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     animation-name: animatetop;
     animation-duration: 0.4s;
-  }
+}
+.service-offered-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 450px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.service-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    color: #363636;
+    font-family: poppins,sans-serif;
+    border-radius: 8px;
+    padding:0px 5px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 85%;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.service-card:hover{
+    transform: scale(110%);
+}
+.service-title {
+    font-size: 18px;
+    background: #00AFF0;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight:600;
+    color:#fff;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.service-hlight{
+    font-size:16px;
+    font-weight:500;
+}
+.service-desc{
+    font-size:12px;
+    text-align:center;
+    width:80%;
+}
+
+.service-btn {
+    margin: 5px 0px 30px;
+    background: none;
+    border: 3px solid #00AFF0;
+    outline: none;
+    padding: 6px 30px;
+    color: #00AFF0;
+    font-size: 16.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   
+}
+
+.service-card:hover .service-title{
+    background:#d82679;
+}
+
+.service-card:hover .service-btn{
+    color: #d82679;
+    border:3px solid #d82679;
+}
+
+
+
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -442,12 +517,12 @@ color:#fff;
     grid-template-columns: 1fr 1fr 2fr 1fr;
     grid-gap:20px;
 }
-.service-card{
+/* .service-card{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     border:2px solid #00AFF0;
-}
+} */
 
 #educationCard{
     height:40%;
@@ -503,7 +578,7 @@ a {
 	padding-top: 30px;
 	position: relative;
     background:#fff;
-   border-radius:3px;
+    border-radius:3px;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
@@ -520,9 +595,7 @@ label {
   float: left;
   width: 20%;
   padding: 1.5em;
-  /* color: #757575; */
-  /* background:#00AFF0; */
-  background:rgb(50,191,243);
+  background:#00AFF0;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -539,7 +612,6 @@ label {
   color: #6d6d6d;
   font-family: 'Poppins', sans-serif;
 }
-
 
 .tab_container .tab-content p,
 .tab_container .tab-content h3 {
